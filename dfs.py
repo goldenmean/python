@@ -1,4 +1,3 @@
-from collections import deque
 
 class Node:
     def __init__(self, value):
@@ -6,21 +5,24 @@ class Node:
         self.left = None
         self.right = None
 
+#PRe-Order Depth First searct traversal of a binary tree
 def bfs(root):
     if root is None:
         return []
-
-    queue = deque([root])
+		
+    queue = []
+    queue.append(root)
     result = []
 
     while queue:
-        node = queue.popleft()
+        node = queue.pop()
         result.append(node.value)
 
-        if node.left:
-            queue.append(node.left)
         if node.right:
             queue.append(node.right)
+        if node.left:
+            queue.append(node.left)
+        
 
     return result
 
@@ -32,4 +34,4 @@ root.left.left = Node(4)
 root.left.right = Node(5)
 root.right.right = Node(6)
 
-print(bfs(root))  # Output: [1, 2, 3, 4, 5, 6]
+print(bfs(root))  # Output: 
