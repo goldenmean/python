@@ -16,11 +16,13 @@ weights = [4, 2, 3, 3] and limit = 5 return 3
 def no_of_life_rafts(nums,limit):
     rafts=0
     sum=0
+    cnt=0
     
     nums.sort()
     for n in nums:
         sum+=n
-        if sum >= limit:
+        cnt+=1
+        if sum >= limit or cnt == 2:
             rafts+=1
             if sum > limit:
                 sum=n
@@ -36,7 +38,9 @@ def no_of_life_rafts(nums,limit):
 #limit=5
 #weights = [1, 2]
 #limit=3
-weights = [4, 2, 3, 3]
+#weights = [4, 2, 3, 3]
+#limit=5
+weights = [1,2,1]
 limit=5
 
 print(no_of_life_rafts(weights,limit))
