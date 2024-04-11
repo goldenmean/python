@@ -1,1 +1,3 @@
-# Python code snippets I have written for simple functionalities and various UKMT and other Math puzzle problems. 
+# Python code snippets I have written for simple functionalities.
+# My python code solutions for various UKMT and other Math puzzle problems
+# Various coding problems that I have solved from leetcode, codility etc...
