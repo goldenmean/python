@@ -13,24 +13,29 @@ nums = [5, 5, 3, 1, 1, 3, 3], return 5.
 
 '''
 
-def partner(nums):
-    currep = 1
-    partner_nums=0
-    atleastone = 0
+from collections import Counter
 
-    nums.sort()
+def count_partners(nums):
+    # Count the occurrences of each number in the array
+    counts = Counter(nums)
+    
+    # Initialize the total number of partners
+    total_partners = 0
+    
+    # For each unique number in the array
+    for count in counts.values():
+        # If there is more than one occurrence of the number
+        if count > 1:
+            # Add the number of partners for this number to the total
+            # The number of partners for a number is the number of pairs that can be formed from its occurrences
+            # which is given by the formula n*(n-1)/2
+            total_partners += count * (count - 1) // 2
+    
+    # Return the total number of partners
+    return total_partners
 
-    for i in range(len(nums)-1):
-        if nums[i] == nums[i+1]:
-            currep+=1  
-            atleastone = 1         
-        else:
-            if atleastone != 0:
-                partner_nums+=currep
-                currep=1
-
-    return  partner_nums
-
-nums = [5, 5, 3, 1, 1, 3, 3]
-#nums = [ 5, 7, 0, -3]
-print(partner(nums))
+#nums = [5, 5, 3, 1, 1, 3, 3]
+nums = [ 5, 7, 0, -3]
+#nums=[1,1,3,4]
+#nums=[1,1,1,1]
+print(count_partners(nums))
