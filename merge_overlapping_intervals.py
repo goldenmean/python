@@ -35,4 +35,6 @@ def merge_intervals(intervals):
 
 intervals = [[1, 3], [5, 12], [4, 10], [20, 25]] 
 
+#intervals = [(1, 3), (5, 12), (4, 10), (20, 25)] #If we use tuples, it gives TypeError as tuple' object does not support item assignment
+
 print(merge_intervals(intervals)) 
