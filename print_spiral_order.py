@@ -32,6 +32,7 @@ You should print out the following:
 '''
 
 def print_spiral_order(matrix):
+    #matrix is a list of lists 
     while matrix:
         # print the first row
         for x in matrix.pop(0):
