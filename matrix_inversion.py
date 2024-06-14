@@ -18,7 +18,6 @@ def inverse_matrix(matrix):
     inverse = [[0 for _ in range(n)] for _ in range(n)]
     for i in range(n):
         for j in range(n):
-            #inverse[i][j] = (matrix[j][i] * (-1)**(i+j)) / determinant(matrix)
             # First find cofactors , then Adjugate is transpose of cofactor matrix 
             # And then divide each element of Adjugate matrix by determinant(A) 
             # cofactor is found for [i][i] but since we need to transpose, we write that
@@ -30,5 +29,6 @@ def inverse_matrix(matrix):
 #A = [[0, 1, 2],[-2, 3, -1],[4, 0, 1]]
 A = [[3, 0, 2], [2, 0, -2], [0, 1, 1]]
 print(inverse_matrix(A))
+
 
 
