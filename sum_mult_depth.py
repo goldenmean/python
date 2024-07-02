@@ -44,8 +44,8 @@ def calculate_depth_iterative(nested_list):
     
     return res
 
-#nested_list = [[1, 1], 2, [1, 1]]
+nested_list = [[1, 1], 2, [1, 1]]
 #nested_list = [1, 1, 2, [1, 1]]
-nested_list=[]
+#nested_list=[]
 result = calculate_depth_iterative(nested_list)
 print(result) 
