@@ -14,18 +14,25 @@ def make_palindrome(s):
     d = Counter(s)
 
     res = 0
-    
-    if len(d) == 1:
-        return len(s)
+    odd_count = 0  # Count how many characters appear an odd number of times
 
     for v in d.values():
-        if v == 1:
-            res += 1
+        if v % 2 == 0:
+            res += v
         else:
-            res += v // 2 * 2 
-                
+            odd_count += 1
+            res += v - 1  # Add the even part of the count
+
+    # Allow one odd character (if any) to be in the middle
+    if odd_count > 0:
+        res += 1
+
     return res
+
 
 #print(make_palindrome("abbcaadabac"))
 #print(make_palindrome("aaab"))
-print(make_palindrome("aaa"))
+#print(make_palindrome("aaa"))
+#print(make_palindrome("abc")) #should be 1
+print(make_palindrome("aabc")) #should be 1
+
