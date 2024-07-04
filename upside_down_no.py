@@ -33,7 +33,7 @@ def is_same_upside_down(num):
     return num == ''.join(upside_down_num[::-1])
 
 # Example usage
-print(is_same_upside_down("0"))  # Output: True
-print(is_same_upside_down("96"))  # Output: True
-print(is_same_upside_down("91"))  # Output: True
-print(is_same_upside_down("003821"))  # Output: False
+#print(is_same_upside_down("0"))  # Output: True
+#print(is_same_upside_down("96"))  # Output: True
+print(is_same_upside_down("91"))  # Output: False
+#print(is_same_upside_down("003821"))  # Output: False
