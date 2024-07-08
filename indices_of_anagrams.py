@@ -39,7 +39,7 @@ def findAnagrams(s: str, p: str):
         # Remove the oldest character from the window's count
         sCount[s[i-len(p)]] -= 1
         if sCount[s[i-len(p)]] == 0:
-            del sCount[s[i-len(p)]]
+             del sCount[s[i-len(p)]]
         # Compare counts and add index to result if they match
         if sCount == pCount:
             result.append(i - len(p) + 1)
