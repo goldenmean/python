@@ -18,11 +18,13 @@ def is_minimally_connected(graph):
         visited.add(node)
         print(f"node: {node}, parent: {parent}, visited: {visited}")
         for neighbor in graph[node]:
+            print(f"neighbor: {neighbor}")
             if neighbor != parent:  # Skip the edge to the parent to avoid going back
                 if neighbor in visited:
-                    print(f"Returning False node: {node}, parent: {parent}, visited: {visited}")
+                    print(f"Returning False node1: {node}, neighbor: {neighbor}, parent: {parent}, visited: {visited}")
                     return False  # Found a cycle, so it is not minimally-connected
                 if not dfs(neighbor, node):
+                    print(f"Returning False node2: {node}, neighbor: {neighbor}, parent: {parent}, visited: {visited}")
                     return False
         print(f"returning True node:{node} ")
         return True
