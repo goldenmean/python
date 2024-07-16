@@ -65,7 +65,7 @@ for number in counter:
     print(number)
 
 '''
-
+'''
 ## Example of Python Decorator
 def my_decorator(func):
     def wrapper(*args, **kwargs):
@@ -85,3 +85,32 @@ def say_hello():
 #Another way to use decorator
 newfunc = my_decorator(say_hello)
 newfunc()
+
+'''
+
+# Function currying in Python using closures
+def curried_multiply(a):
+    def next(b):
+        def final(c):
+            print(f"a={a}, b={b}, c={c}")
+            return a * b * c
+        return final
+    return next
+
+result = curried_multiply(2)(3)(4)
+print(result)  # Output: 24
+
+# Function currying involving Closures where the closure next and final also capture
+# the values of enclosing local variables and the enclosing function parameters
+def other_curried_multiply(a):
+    random1 = 10
+    def next(b): 
+        random2 = 20
+        def final(c):
+            print(f"a={a}, b={b}, c={c}")
+            return a * b * c * random1 * random2
+        return final
+    return next
+
+result = other_curried_multiply(2)(3)(4)
+print(result)  
