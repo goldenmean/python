@@ -107,7 +107,7 @@ def other_curried_multiply(a):
     def next(b): 
         random2 = 20
         def final(c):
-            print(f"a={a}, b={b}, c={c}")
+            print(f"a={a}, b={b}, c={c}, radom1={random1}, random2={random2}")
             return a * b * c * random1 * random2
         return final
     return next

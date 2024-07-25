@@ -27,6 +27,7 @@ def postorder(root):
         node = stack.pop()
         result.append(node.val)
         stack.extend(node.children)
+        print(f"result: {result}, stack: {[n.val for n in stack]}")
     #Reverse the result because stack.pop appends the children from the right to left , but we need left to right in postorder
     return result[::-1]
 
