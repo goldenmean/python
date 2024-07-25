@@ -3,6 +3,7 @@
 #Transpose a matrix - pythonic way using list comprehension
 #returns a new matrix
 def transpose(matrix):
+    # Outer loop: for i in range(len(matrix[0])) ; Inner loop:row[i] for row in matrix
     return [[row[i] for row in matrix] for i in range(len(matrix[0]))]
 
 
