@@ -1,0 +1,33 @@
+1] Pick a programming language which is a) popular b) you are interested in learning 
+2] Learn basic syntax and the structure of the language, how the programs in it are executed
+   You can use online videos, tutorials and beginners books
+3] Start writing simple code in that language to understand all the constructs of the language- 
+   its keywords, looping, conditional statements, File I/O, 
+4] Have a good setup of editor, compiler for the language, to write the code, execute it. Get comfortable with it. 
+5] Solve coding puzzles using that language
+ there are plenty of sites online these days for that!
+6] Start writing code for small projects to do something useful
+7] Read lot of code from that
+
+
+Language syntax, keywords; 
+Loops;
+Conditional statements;
+File i/o
+Console i/o
+Native data types
+Data Structures implementation
+Algorithms implementation
+Object oriented programming
+GUI development
+Multithreading:Concurrency and Parallelism
+Regular expressions
+Network sockets
+Logging module
+Excel file manipulations
+Database access
+
+Advanced features:
+Closures; Decorators; Generators; Function currying;
+Monkey patching;  
+

@@ -1,0 +1,7 @@
+2024-07-27 20:57:20,662:DEBUG:root:This message should go to the log file
+2024-07-27 20:57:20,662:WARNING:root:Remain calm!
+2024-07-27 20:57:20,662:INFO:root:just for your info fyi
+2024-07-27 20:57:20,663:ERROR:root:This is an error message
+NoneType: None
+2024-07-27 20:57:20,663:CRITICAL:root:Critical error...
+2024-07-27 20:57:20,663:WARNING:__main__:Look at my logger!
