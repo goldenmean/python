@@ -34,12 +34,15 @@ Time Complexity: O(m*n)
 def minDistance(word1: str, word2: str) -> int: 
     m, n = len(word1), len(word2)
     # Create dp array
+    #dp[i][j] = Minimum number of operations needed to convert i chars from word1[0..i-1] to j chars from word2[0..j-1]
     dp = [[0] * (n + 1) for _ in range(m + 1)]
 
     # Initialize first row and column
     for i in range(m + 1):
+        # Number of operations needed for converting i chars in word1 to 0 chars in word2 is i
         dp[i][0] = i
     for j in range(n + 1): 
+        # Number of operations needed for converting 0 chars in word1 to j chars in word2 is j
         dp[0][j]= j
     
     # Fill dp array
