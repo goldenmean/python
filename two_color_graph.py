@@ -1,3 +1,7 @@
+'''
+Given a graph in form of adjacency matrix, return True if it can be colored using two colors else return False.
+'''
+
 class Graph:
     def __init__(self, V):
         self.V = V
