@@ -38,16 +38,16 @@ def min_jumps(C):
             print(queue)
             return jumps            
 
-        # Try to jump to current + 2
-        if current + 2 < n and C[current + 2] == 0 and (current + 2) not in visited:
-            queue.append((current + 2, jumps + 1))
-            visited.add(current + 2)
-
+       
         # Try to jump to current + 1 
         if current + 1 < n and C[current + 1] == 0 and (current + 1) not in visited:
             queue.append((current + 1, jumps + 1))
             visited.add(current + 1)
 
+        # Try to jump to current + 2
+        if current + 2 < n and C[current + 2] == 0 and (current + 2) not in visited:
+            queue.append((current + 2, jumps + 1))
+            visited.add(current + 2)
         
             
         print(f"queue is {queue}")
@@ -56,7 +56,7 @@ def min_jumps(C):
     return -1  # Should never reach here since it's always possible to win the game
 
 # Example usage
-#C = [0, 1, 0, 0, 0, 1, 0]
+C = [0, 1, 0, 0, 0, 1, 0]
 #C = [0, 0, 0, 0, 0]
 #C = [0, 0, 1, 0, 0, 1, 0]
 #C = [0, 0, 0, 0, 1, 0]

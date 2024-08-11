@@ -25,7 +25,7 @@ def simulate_game(condition):
     return rolls
 
 # Parameters for the simulations
-num_simulations = 1000000
+num_simulations = 100000
 game_conditions = [(5, 6), (5, 5)]  # Conditions for the two games
 
 # Initialize counters
