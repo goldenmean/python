@@ -8,12 +8,12 @@ import threading
 import time
 
 def next_fun():
-    for i in range(5):
+    for i in range(20):
         print("Hello in between the other thread that is running")
 
 def worker():
     print("Worker Thread starting\n")
-    time.sleep(5)  # Simulate some work
+    time.sleep(2)  # Simulate some work
     print("Worker Thread finishing")
 
 # Create a daemon thread

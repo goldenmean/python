@@ -6,7 +6,8 @@ D+1 colors such that no two adjacent nodes have the same color.
 
 The lowest number of colors we can use to legally color a graph is called the chromatic number.
 
-There's no known polynomial time solution for finding a graph’s chromatic number. It might be impossible, or maybe we just haven’t figured out a solution yet.
+There's no known polynomial time solution for finding a graph’s chromatic number.
+It might be impossible, or maybe we just haven’t figured out a solution yet.
 
 We can't even determine in polynomial time if a graph can be colored using a given 
 k

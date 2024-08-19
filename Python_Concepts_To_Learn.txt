@@ -20,14 +20,19 @@ Data Structures implementation
 Algorithms implementation
 Object oriented programming
 GUI development
+Execute bash commands from Python
 Multithreading:Concurrency and Parallelism
 Regular expressions
-Network sockets
+Network sockets (TCP, UDP)
+Datetime module
 Logging module
 Excel file manipulations
 Database access
+SSH connections library
+Do in Python, everything what one can do using: bash, sed, awk 
 
 Advanced features:
 Closures; Decorators; Generators; Function currying;
-Monkey patching;  
+Monkey patching; Dataclass;  
+functools module; itertools module; 
 

@@ -1,5 +1,5 @@
 '''
-You’re given a set of integers, dominoes, that represent a set of domino tiles.
+You are given a set of integers, dominoes, that represent a set of domino tiles.
 The value of domino represents either weight and its sign, positive or negative,
 represents the direction it is falling: positive falls right and negative
 falls left. When two dominoes collide, the larger domino destroys the smaller
@@ -46,7 +46,9 @@ def domino_collision(dominoes):
     return stack
 
 # Example usage
-dominoes1 = [3, -3]
+#dominoes1 = [3, -3]
+dominoes1 = [3, 1]
+
 #dominoes2 = [1, 2, -3, 2, -1]
 print(domino_collision(dominoes1))  # Output: []
 #print(domino_collision(dominoes2))  # Output: [-3, 2]
