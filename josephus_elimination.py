@@ -29,5 +29,7 @@ def find_survivor(N, k):
 # Example usage:
 N = 5; k = 2
 #N = 2; k = 2
+#N = 3; k = 2
+#N = 4; k = 2
 #N=41; k = 3
 print(f"Last survivor: {find_survivor(N, k)}") 
