@@ -49,3 +49,4 @@ root.right.right.left = TreeNode(6)
 root.right.right.right = TreeNode(7)
 
 print(level_with_min_sum(root))
+
