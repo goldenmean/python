@@ -28,7 +28,7 @@ nums2 = [6, 2, 4, 3]
 print(maxProductTwoIndices(nums2))  # Output: 24
 
 nums3 = [-3, -4, 5, 2]
-print(maxProductTwoIndices(nums3))  # Output: 20
+print(maxProductTwoIndices(nums3))  
 
 nums4 = [-10, -2, 5, 3]
 print(maxProductTwoIndices(nums4))  # Output: 20

@@ -17,6 +17,7 @@ class Card:
 
 class Deck:
     def __init__(self):
+        
         ranks = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King']
         suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
         #This list has Card objects created with given rank, suit
