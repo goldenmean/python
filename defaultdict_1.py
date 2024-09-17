@@ -16,7 +16,7 @@ for index, value in enumerate(a):
 print(d)
 
 
-#Just a way to create a regular dictionary with key, values values as list of size of a
+#Just a way to create a regular dictionary with key, values, values as list of size of a
 regular_d={n:[0]*len(a) for n in a}
 
 # Another way without using defaultdict , but instead using a regular dictionary

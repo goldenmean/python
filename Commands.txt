@@ -1,0 +1,26 @@
+#To get a list and the versions of currently installed python packages, in format of requirements.txt
+pip freeze > requirements.txt  
+#Change "==" to ">=" in the requirements.txt to get latest versions  
+#In the new python version prompt To install all packages
+pip install -r requirements.txt
+
+#Get existing packages
+pip list 
+#Check in latest python installation command prompt to see if later version is available
+pip show package_name
+#If a newer version is available install it
+pip install package_name --upgrade
+
+
+#To upgrade outdated packages in a python version
+pip list --outdated --format=freeze | pip install - 
+
+
+#Install packages in a python virtual environment
+python3.14 -m venv c:\path\to\new_env
+c:\path\to\new_env\Scripts\activate or source path/tonew_env/Scripts/activate
+pip install --upgrade pip
+pip list --outdated --format=freeze | pip install -
+deactivate
+
+
