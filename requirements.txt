@@ -31,7 +31,7 @@ comm==0.2.2
 confection==0.1.5
 constantly==23.10.4
 contourpy==1.2.1
-cryptography==42.0.8
+cryptography==43.0.1
 cssselect==1.2.0
 cycler==0.12.1
 cymem==2.0.8
