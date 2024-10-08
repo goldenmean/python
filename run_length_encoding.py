@@ -31,7 +31,7 @@ def rlencode(s):
     return res
     
     
-#s="AAAABBBCCDAA"  
-s="ajit"  
+s="AAAABBBCCDAA"  
+#s="ajit"  
 print(rlencode(s))
     

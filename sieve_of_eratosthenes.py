@@ -1,6 +1,7 @@
 ''' Implement Sieve of Eratosthenes alghorithm to find all prime numbers up to n
 '''
-'''
+
+
 def sieve_of_eratosthenes(N):
     # Initialize a list to keep track of prime numbers
     is_prime = [True] * N
@@ -11,6 +12,7 @@ def sieve_of_eratosthenes(N):
         if is_prime[i]:
             # Mark all multiples of i as non-prime
             for j in range(i * i, N, i):
+                print(f"i is {i} and j is {j}")
                 is_prime[j] = False
 
     # Collect all prime numbers
@@ -22,9 +24,8 @@ N = 50
 primes = sieve_of_eratosthenes(N)
 print(f"Prime numbers less than {N}: {primes}")
 
+
 '''
-
-
 def dynamic_prime_generator():
     D = {}  # Dictionary to hold multiples of primes
     q = 2   # Starting integer to check for primality
@@ -47,3 +48,5 @@ def dynamic_prime_generator():
 gen = dynamic_prime_generator()
 for _ in range(10):
     print(next(gen))
+
+'''

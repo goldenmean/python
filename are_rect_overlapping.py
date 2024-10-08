@@ -22,8 +22,8 @@ def are_rect_overlapping(rect1, rect2) -> bool:
     
     #return max(rect1[0], rect2[0]) < min(rect1[2], rect2[2]) and max(rect1[1], rect2[1]) < min(rect1[3], rect2[3])
 
-#rect1 = [0, 0, 1, 1] ; rect2 = [0, 0, 3, 3]
-rect1 = [0, 0, 1, 1]; rect2 = [1, 1, 4, 4]
+rect1 = [0, 0, 1, 1] ; rect2 = [0, 0, 3, 3]
+#rect1 = [0, 0, 1, 1]; rect2 = [1, 1, 4, 4]
 
 print(are_rect_overlapping(rect1, rect2))   
 

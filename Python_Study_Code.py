@@ -27,6 +27,14 @@ print(x.text)
 '''
 
 import subprocess
+'''
+command: The command to be executed (in this case, "dir").
+capture_output=True: Capture the output of the command instead of printing it to the console.
+text=True: Return the output as a string instead of bytes.
+shell=True: Execute the command through the shell, allowing for more complex commands and shell features.
+The result is stored in the res variable, which contains information about the command's execution,
+including the output (accessible via res.stdout
+'''
 command = "dir"
 res=subprocess.run(command,capture_output=True, text=True, shell=True)
 print(res.stdout)

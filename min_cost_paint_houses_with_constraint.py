@@ -20,6 +20,7 @@ def min_cost_to_paint_houses(costs):
 
     # Iterate over the rest of the houses
     for i in range(1, n):
+        print(prev_red, prev_blue, prev_green)
         #find cost of painting current house with red, if previous house was painted with blue or green
         current_red = costs[i][0] + min(prev_blue, prev_green)
         #find cost of painting current house with blue, if previous house was painted with red or green
@@ -30,6 +31,7 @@ def min_cost_to_paint_houses(costs):
         # Update the previous costs for the next iteration
         prev_red, prev_blue, prev_green = current_red, current_blue, current_green
 
+    print(prev_red, prev_blue, prev_green)
     # The answer will be the minimum cost of painting the last house any color
     return min(prev_red, prev_blue, prev_green)
 

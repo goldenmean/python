@@ -14,6 +14,7 @@ def looksay(N):
     if N == 1: return res
     
     def helper(strng):
+        
         temp = ""
         count = 1
         slen = len(strng)
@@ -29,7 +30,7 @@ def looksay(N):
         return temp
 
     for j in range(2,N+1):
-        #print(f"Before: helper res is {res}")
+        print(f"Before: helper res is {res}, j is {j}")
         res = helper(res)
        # print(res)
    
@@ -37,7 +38,7 @@ def looksay(N):
     
             
 
-N=7
+N=5
 print(looksay(N))
 
 

@@ -42,16 +42,17 @@ class MyGraph:
 
 # Example usage:
 g = MyGraph()
-'''
+
 g.add_edge(0, 1)
 g.add_edge(1, 2)
 g.add_edge(2, 0)
 g.add_edge(3, 4)
+
+
 '''
-
-
 g.add_edge(0, 1)
 g.add_edge(1, 0)
+'''
 
 if g.is_cyclic():
     print("Graph contains cycle")

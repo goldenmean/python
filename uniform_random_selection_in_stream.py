@@ -57,3 +57,50 @@ def random_number(x, y=0, count=1):
             res = y
             
     return res
+
+# Example generator function
+def number_generator(start, end):
+    for number in range(start, end + 1):
+        yield number
+
+# Create a generator object
+stream = number_generator(1, 1000000)
+
+# Initialize variables
+selected_element = None
+count = 0
+
+# Process the stream
+for element in stream:
+    count += 1
+    selected_element = random_number(element, selected_element, count)
+
+
+
+###################################
+'''
+Given a stream of elements too large to store in memory, pick a random element from the stream with uniform probability.
+'''
+
+import random
+
+def reservoir_sampling(stream):
+    # Initialize the reservoir with the first element of the stream
+    reservoir = None
+    for i, element in enumerate(stream):
+        if i == 0:
+            reservoir = element
+        else:
+            # Generate a random number between 0 and i
+            j = random.randint(0, i)
+            # Replace the element in the reservoir with the current element
+            # with probability 1/(i+1)
+            if j == 0:
+                reservoir = element
+    return reservoir
+
+
+stream = (x for x in range(1, 1000001))  # A generator yielding numbers from 1 to 1,000,000
+
+random_element = reservoir_sampling(stream)
+print(f"Randomly selected element from the stream: {random_element}")
