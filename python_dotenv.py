@@ -8,7 +8,6 @@ import os
 #API_KEY = os.getenv('OPENAI_API_KEY')
 #print(API_KEY)
 
-
 os.environ['WEATHER_API_KEY'] = '1234567890abcdef'
 #os.putenv('WEATHER_API_KEY', '1234567890abcdef')
 #print(os.getenv('WEATHER_API_KEY'))

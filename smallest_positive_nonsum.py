@@ -19,5 +19,7 @@ def find_smallest_missing_positive(arr):
 
 # Example usage:
 #arr = [1, 2, 3, 10] # Output: 7
-arr = [1,2,3,5,7,19]
+#arr = [1,2,3,5,7,19]
+#arr =[1,2,3,5]
+arr = [1, 2, 3, 8, 9, 10]
 print(find_smallest_missing_positive(arr))  
