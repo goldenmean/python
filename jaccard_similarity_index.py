@@ -28,6 +28,7 @@ def find_top_k_similar_websites(pairs: List[Tuple[str, int]], k: int) -> List[Tu
     for website, user in pairs:
         website_users[website].add(user)
     
+    print(website_users)
     # Step 2: Calculate the similarity for each pair of websites
     similarities = []
     for (website1, users1), (website2, users2) in combinations(website_users.items(), 2):
@@ -49,5 +50,5 @@ pairs = [
     ('d', 4), ('d', 5), ('d', 6), ('d', 7),
     ('e', 1), ('e', 3), ('e', 5), ('e', 6)
 ]
-k = 1
+k = 3
 print(find_top_k_similar_websites(pairs, k))  # Output: [('a', 'e')]
