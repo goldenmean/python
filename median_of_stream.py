@@ -30,7 +30,7 @@ class MedianFinder:
             heapq.heappush(self.low, -val)
         
     def find_median(self):
-        #If upper half(maxheap) is bigger return the max element in that heap as median
+        #If lower half(maxheap) is bigger return the max element in that heap as median
         if len(self.low) > len(self.high):
             return -self.low[0]
         elif len(self.high) > len(self.low):
@@ -50,4 +50,4 @@ def compute_median_stream(nums):
 
 # Test the function with an example
 nums = [2, 1, 4, 7, 2, 0, 5]
-print(compute_median_stream(nums))  # Output: [2, 1.5, 2, 2.5, 2, 2, 2]
+print(compute_median_stream(nums))  

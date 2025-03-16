@@ -76,3 +76,15 @@
 • 𝖼𝗈𝗅𝗅𝖾𝖼𝗍𝗂𝗈𝗇𝗌 𝗆𝗈𝖽𝗎𝗅𝖾
 • Implement various design patterns- singleton, adapter, observer, etc..
 
+
+Python code static analysis and lint tools that check for bugs, errors, and security vulnerabilities. Here's a list of some excellent options:
+Pylint: A highly configurable and comprehensive tool that checks for coding standards, errors, and potential bugs.
+Flake8: A wrapper around PyFlakes, pycodestyle, and McCabe complexity checker. It's fast and easy to use.
+Mypy: A static type checker for Python that can catch many programming errors by analyzing type hints.
+Bandit: Specifically designed to find common security issues in Python code.
+Pyright: Microsoft's static type checker for Python, which is fast and highly configurable.
+Prospector: A tool that runs a suite of Python analyzers and linters, including Pylint, pep8, and others.
+Pyre: Facebook's performant type checker for Python.
+Pysa: A security-focused static analysis tool built on top of Pyre.
+SonarQube: While not Python-specific, it offers excellent Python support for detecting bugs, vulnerabilities, and code smells.
+Radon: A Python tool that computes various metrics from the source code, including cyclomatic complexity.

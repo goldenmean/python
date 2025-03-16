@@ -44,14 +44,14 @@ import unittest
 
 class Test(unittest.TestCase):
  
-    '''
+   
     def test_1(self):
         g = Graph(4)
         g.graph = [[0, 1, 0, 1], [1, 0, 1, 0], [0, 1, 0, 1], [1, 0, 1, 0]]
         assert g.two_color_graph(0) == True
 
         print("PASSED: First Test")
-    '''   
+   
     def test_2(self):
         g = Graph(4)
         g.graph = [[0, 1, 1, 1], [1, 0, 0, 0], [0, 1, 0, 1], [1, 0, 1, 0]]
@@ -59,15 +59,13 @@ class Test(unittest.TestCase):
 
         print("PASSED: Second Test")
 
-    '''   
     def test_3(self):
         g = Graph(4)
         g.graph = [[1, 1, 0, 1], [1, 0, 1, 0], [0, 1, 0, 1], [1, 0, 1, 0]]
         assert g.two_color_graph(0) == False
 
         print("PASSED: Third Test")
-    '''   
 
 if __name__ == "__main__":
-    unittest.main(verbosity=2)
+    unittest.main(verbosity=3)
     print("Nice job, 3/3 tests passed!")

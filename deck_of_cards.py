@@ -6,13 +6,12 @@ Data structure to implement deck of cards and shuffle and draw cards
 
 import random
 
-class Card:
-    def __init__(self, rank, suit):
+class Card:    def __init__(self, rank, suit):
         self.rank = rank
         self.suit = suit
 
     def __str__(self):
-        #print("From class Card")
+        print("From class Card")
         return f"{self.rank} of {self.suit}"
 
 class Deck:

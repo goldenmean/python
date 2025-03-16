@@ -18,10 +18,11 @@ def compare(x, y):
 def largest_number(numbers):
     # Convert the numbers to strings
     str_numbers = list(map(str, numbers))
-    
+    print(str_numbers)
     # Sort the numbers based on the custom comparison function
     sorted_numbers = sorted(str_numbers, key=cmp_to_key(compare))
     
+    print(sorted_numbers)
     # Concatenate the sorted numbers
     largest_num = ''.join(sorted_numbers)
     

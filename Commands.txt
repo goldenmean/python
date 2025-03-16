@@ -4,6 +4,9 @@ pip freeze > requirements.txt
 #In the new python version prompt To install all packages
 pip install -r requirements.txt
 
+#To keep dependencies updated
+pip install --upgrade -r requirements.txt
+
 #Get existing packages
 pip list 
 #Check in latest python installation command prompt to see if later version is available

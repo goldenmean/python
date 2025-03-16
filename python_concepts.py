@@ -52,3 +52,56 @@ import math
 if (result := math.sin(3.14)) > 0.5:
     print(result)
     print("Result is greater than 0.5")
+
+# Mutable list side-effect
+'''
+The function add_to_list has side effects because it uses a mutable default 
+argument (lst=[]). In Python, default arguments are evaluated only once when
+the function is defined, not each time the function is called. As a result,
+the same list is used across multiple calls to the function if the lst argument
+is not provided.
+'''
+def add_to_list(value, lst=[]):
+    lst.append(value)
+    return lst
+
+print(add_to_list(1))  # [1]
+print(add_to_list(2))  #[1,2]
+
+# IF you want to avoid this behavior, you can use None as the default value 
+# and create a local variable inside the function which does not persist across calls.
+def add_to_list(value, lst=None):
+    if lst is None:
+        lst = []
+    lst.append(value)
+    return lst
+
+# Now each call works with its own list
+print(add_to_list(1))  # Output: [1]
+print(add_to_list(2))  # Output: [2]
+
+
+"""
+Given a list of subjects with the corresponding number of students who opted
+for each subject, design a function where each subject is picked with a
+probability proportional to its student count.
+"""
+
+import random
+def get_random_item(input_array):
+  return random.choice(input_array)
+
+#Another way to pick a random element 
+import time
+
+input_array = [1,2,3,4,5]
+def get_random_item_using_time(input_array):
+  timestamp = time.time()
+  array_size = len(input_array)
+  return input_array[timestamp % array_size]
+
+def get_item(subject_count_map):
+  array = []
+  for subject, count in subject_count_map:
+    array.extend([subject]*count)
+    return get_random_item(array) # 

@@ -38,6 +38,7 @@ class TreeNode:
 
 def build_huffman_tree(frequencies):
     heap = [TreeNode(char, freq) for char, freq in frequencies.items()]
+    #Arranges the heap in ascending order based on frequency of the characters
     heapq.heapify(heap)
     #print(heap[0].freq)
     while len(heap) > 1:
@@ -74,12 +75,12 @@ frequencies = {
     'c': 7,
     't': 10,
     's': 15,
-    'a': 5
+    'z': 5
 }
 
 codes = huffman_encoding(frequencies)
 print("Huffman Codes:", codes)
 
 # Example encoding for "cats"
-encoded_string = ''.join(codes[char] for char in "cats")
+encoded_string = ''.join(codes[char] for char in "ctsz")
 print("Encoded 'cats':", encoded_string)

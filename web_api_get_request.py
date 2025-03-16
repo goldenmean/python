@@ -29,13 +29,14 @@ def get_todos(user_id):
         return None
 
 def main():
-    user_id = 2893
+    user_id = 1
     todos = get_todos(user_id)
 
     if todos:
         print(f"Todos for user {user_id}:")
         for todo in todos:
-            print(f"- {todo['title']} ({'Completed' if todo['completed'] else 'Not Completed'})")
+            print(todo)
+            #print(f"- {todo['title']} ({'Completed' if todo['completed'] else 'Not Completed'})")
     else:
         print("Failed to retrieve todos.")
 

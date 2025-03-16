@@ -11,7 +11,7 @@ programming concepts.
 #original code without closure
 '''
 def make_functions():
-    flist = []
+    flist = []  
 
     for i in [1, 2, 3]:
         def print_i():
