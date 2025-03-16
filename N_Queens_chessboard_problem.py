@@ -37,6 +37,7 @@ def recursive_n_queens(board, col, N):
             if recursive_n_queens(board, col + 1, N): # recursively place next queen at col+1 
                 return True  # If solution is found return True
             board[i][col] = 0  # If solution is not found, remove current queen from (i,col)
+            print(f"Backtracking {i},{col}")
     
     return False
 
